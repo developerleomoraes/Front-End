@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador</p>
+    <!--Tag picture que permite que as imagens mudem dependendo do tamanho da tela do usuário-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/small_img_300x300.jpeg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="imagens/medium_img_700x700.jpg" type="image/jpg">
+        <img src="./imagens/large_img_1000x1000.jpg" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="./midia/ice_fire.mp3" type="audio/mpeg">
+        <source src="./midia/guanacast-33.mp3" type="audio/mp3">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="./midia/ice_fire.mp3">Clique aqui para
+                baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+
+</html>
