@@ -12,7 +12,7 @@ form.addEventListener('submit', (event) => {
 
     // verifica se o nome está vazio
     if (nameInput.value === ''){
-        alert('Por favor, preenhca o seu nome!')
+        alert('Por favor, preencha o seu nome!')
         return
     }
 
@@ -35,7 +35,7 @@ form.addEventListener('submit', (event) => {
     }
 
     // verifica se a mensagem está preenchida
-    if (messageTextArea.valeu === ''){
+    if (messageTextArea.value === ''){
         alert('Por favor, preencha ou escreva uma mensagem')
         return
     }
@@ -50,7 +50,7 @@ form.addEventListener('submit', (event) => {
 // Função que valida email
 function isEmailValid(email) {
     // cria uma regex para validar email
-    const emailRegex = new RegExp(/^[a-zA-z0-9._-]+@[a-zA-z0-9._-]+\.[a-zA-Z]{2, }$/)
+    const emailRegex = new RegExp(/^[a-zA-z0-9._-]+@[a-zA-z0-9._-]+\.[a-zA-Z]{2,}$/)
     if (emailRegex.test(email)) {
         return true
     }
