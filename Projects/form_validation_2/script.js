@@ -26,7 +26,7 @@ function checkInputs() {
 
     // name
     if (usarnameValue === ''){
-        errorValidation(username, 'Preencha esse campo!')
+        errorValidation(username, 'This field is required')
     }
      else {
         successValidation(username)
@@ -34,25 +34,25 @@ function checkInputs() {
 
     // email
     if (emailValue === ''){
-        errorValidation(email, 'Preencha esse campo!')
+        errorValidation(email, 'This field is required')
     } else {
         successValidation(email)
     }
 
     //password
     if (passwordValue === ''){
-        errorValidation(password, 'Preencha esse campo!')
+        errorValidation(password, 'This field is required')
     } else if (passwordValue.length < 8) {
-        errorValidation(password, 'A senha deve ter mais de 8 caracteres')
+        errorValidation(password, 'Password must be at least 8 characters long')
     } else {
         successValidation(password)
     }
         
     //passwordtwo
     if (passwordtwoValue === ''){
-        errorValidation(passwordtwo, 'Preencha esse campo!')
+        errorValidation(passwordtwo, 'This field is required')
     } else if (passwordValue !== passwordtwoValue) {
-        errorValidation(passwordtwo, 'As senhas precisam ser iguais')
+        errorValidation(passwordtwo, 'Passwords must match')
     } else {
         successValidation(passwordtwo)
     }
@@ -61,7 +61,7 @@ function checkInputs() {
     if (usarnameValue !== '' && emailValue !== '' &&
         passwordValue !== '' && passwordtwoValue !== '' &&
         passwordValue === passwordtwoValue && passwordValue.length > 8){
-            alert('Cadastro realizado com Sucesso!')
+            alert('Registration completed successfully!')
         }
 }
 
